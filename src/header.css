@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #0b0b0b;
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#header-left #logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5c518; /* gold like IMDb */
+}
+
+/* #header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+#search {
+    
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 800px;
+  height: 40px;
+  margin-left: 100px;
+  filter: drop-shadow(0 0 4px rgba(245, 197, 24, 0.6)); /* ✅ border glow */
+  transition: all 0.1s ease;
+}
+
+
+#search:focus {
+  filter: drop-shadow(0 0 10px rgba(245, 197, 24, 0.9)); /* brighter when focused */
+  border-color: #ffd700;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f5c518;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.clear-btn:hover {
+  opacity: 1;
+  color: #ffd700;
+}
+
+#location {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #c90e0e;
+  color: white;
+  margin-left: 50px;
+}
+
+#location1{
+    background-color: white;
+    cursor: pointer;
+    color: red;
+}
+
+#signup-btn {
+  background-color: #f5c518;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* ✅ Text shadow */
+  transition: transform 0.2s ease;
+}
+
+#profile-btn {
+  background-color: #f5c518;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* ✅ Text shadow */
+  transition: transform 0.2s ease;
+}
+
+#signup-btn:hover,
+#profile-btn:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
